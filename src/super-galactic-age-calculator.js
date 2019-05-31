@@ -1,4 +1,4 @@
-export function GalacticAgeCalculator() {
+export function GalacticAgeCalculator(birthday) {
   this.birthday = birthday;
 }
 
