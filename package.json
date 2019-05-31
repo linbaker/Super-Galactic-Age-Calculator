@@ -1,0 +1,29 @@
+{
+  "name": "Super-Galactic-Age-Calculator",
+  "version": "1.0.0",
+  "description": "https://github.com/linbaker/Super-Galactic-Age-Calculator.git",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linbaker/Super-Galactic-Age-Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linbaker/Super-Galactic-Age-Calculator/issues"
+  },
+  "homepage": "https://github.com/linbaker/Super-Galactic-Age-Calculator#readme",
+  "dependencies": {
+    "webpack": "4.19.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.20.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
