@@ -12,3 +12,6 @@ export class GalacticAgeCalculator {
     return ageInYears;
   }
 }
+
+let birthday = new GalacticAgeCalculator(new Date());
+birthday.age();

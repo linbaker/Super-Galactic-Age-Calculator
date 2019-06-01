@@ -2,9 +2,8 @@ import { GalacticAgeCalculator } from './../src/super-galactic-age-calculator.js
 
 describe('GalacticAgeCalculator', function() {
 
-  it('should create a GalacticAgeCalculator object', function ()
-  {
-    let dob = new GalacticAgeCalculatorc(new Date(1993, 8, 11));
+  it('should instantiate a GalacticAgeCalculator object', function (){
+    let dob = new GalacticAgeCalculator(new Date(1993, 8, 11));
     expect(typeof dob).toEqual(typeof new GalacticAgeCalculator);
   });
 
