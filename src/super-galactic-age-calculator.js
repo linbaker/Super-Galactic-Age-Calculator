@@ -3,7 +3,7 @@ export class GalacticAgeCalculator {
     this.birthday = birthday;
   }
 
-  age() {
+  earthAge() {
     let birthdate = new Date(this.birthday);
     let now = Date.now();
     let ageInMS = (now - Date.parse(birthdate));
@@ -11,6 +11,11 @@ export class GalacticAgeCalculator {
     let ageInYears = Math.floor(ageInMS/msInYear);
     return ageInYears;
   }
+
+  ageOnMercury() {
+    let earthAge =
+  }
+  Mercury Solar Years (0.24 Earth Years)
 }
 
 
