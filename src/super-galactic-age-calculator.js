@@ -1,11 +1,12 @@
-export class GalacticAgeCalculator{
+export class GalacticAgeCalculator {
   constructor(birthday) {
     this.birthday = birthday;
   }
-  export function age(userInputDOB) {
-    let birthday = new Date(userInputDOB);
+
+  age() {
+    let birthdate = new Date(this.birthday);
     let now = Date.now();
-    let ageInMS = (now - Date.parse(birthday));
+    let ageInMS = (now - Date.parse(birthdate));
     const msInYear = 31556952000;
     let ageInYears = Math.floor(ageInMS/msInYear);
     return ageInYears;

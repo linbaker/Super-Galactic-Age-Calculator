@@ -1,4 +1,4 @@
-// import { Age } from './super-galactic-age-calculator.js';
+// import { GalacticAgeCalculator } from './super-galactic-age-calculator.js';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
