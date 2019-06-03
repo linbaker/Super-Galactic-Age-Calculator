@@ -95,8 +95,3 @@ export class GalacticAgeCalculator {
     return jupiterReturn;
   }
 }
-
-
-//Class GalacticAgeCalculator returns as unused variable and refuses to compile unless I add the following code
-let birthday = new GalacticAgeCalculator(new Date());
-birthday.ageOnEarth();
