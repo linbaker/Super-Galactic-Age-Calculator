@@ -83,6 +83,17 @@ export class GalacticAgeCalculator {
     console.log(ageInJupiterYears);
     return ageInJupiterYears;
   }
+
+  yearsLeftJupiter() {
+    const jupiterMod = 11.86;
+    let jupiterYearsLeft = Math.floor(this.yearsLeft()/jupiterMod);
+    if (jupiterYearsLeft < 0) {
+      let jupiterReturn = `You are ${this.ageOnJupiter()} years old on Jupiter. You have over stayed your welcome on Jupiter by ${Math.abs(jupiterYearsLeft)} Jupiter solar years.`;
+      return jupiterReturn;
+    }
+    let jupiterReturn = `You are ${this.ageOnJupiter()} years old on Jupiter. You have ${jupiterYearsLeft} Jupiter solar years left before you kick the bucket!`;
+    return jupiterReturn;
+  }
 }
 
 
