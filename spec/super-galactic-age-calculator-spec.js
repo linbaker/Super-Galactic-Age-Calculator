@@ -66,4 +66,12 @@ describe('GalacticAgeCalculator', function() {
     expect(dob.yearsLeftMars()).not.toEqual("You are 109 years old on Mars. You have 1 Mars solar years left before you kick the bucket!");
     expect(dob2.yearsLeftMars()).toEqual("You are 52 years old on Mars. You have over stayed your welcome on Mars by 15 Mars solar years.");
   });
+
+  it('should return life expectancy on Jupiter', function() {
+    let dob = new GalacticAgeCalculator(new Date(1993, 8, 11));
+    let dob2 = new GalacticAgeCalculator(new Date(1920, 1, 1));
+    expect(dob.yearsLeftJupiter()).toEqual("You are 2 years old on Jupiter. You have 3 Jupiter solar years left before you kick the bucket!");
+    expect(dob.yearsLeftJupiter()).not.toEqual("You are 109 years old on Jupiter. You have 1 Jupiter solar years left before you kick the bucket!");
+    expect(dob2.yearsLeftJupiter()).toEqual("You are 8 years old on Jupiter. You have over stayed your welcome on Jupiter by 3 Jupiter solar years.");
+  });
 });
