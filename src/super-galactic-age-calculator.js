@@ -12,6 +12,13 @@ export class GalacticAgeCalculator {
     return ageInYears;
   }
 
+  yearsLeft() {
+    let years = this.ageOnEarth();
+    const avgLifeExp = 71;
+    let yearsRemaining = avgLifeExp - years;
+    return yearsRemaining;
+  }
+
   ageOnMercury() {
     let earthAge = this.ageOnEarth();
     const mercuryMod = 0.24;
