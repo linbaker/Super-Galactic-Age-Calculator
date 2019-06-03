@@ -58,4 +58,12 @@ describe('GalacticAgeCalculator', function() {
     expect(dob.yearsLeftVenus()).not.toEqual("You are 109 years old on Venus. You have 1 Venus solar years left before you kick the bucket!");
     expect(dob2.yearsLeftVenus()).toEqual("You are 159 years old on Venus. You have over stayed your welcome on Venus by 46 Venus solar years.");
   });
+
+  it('should return life expectancy on Mars', function() {
+    let dob = new GalacticAgeCalculator(new Date(1993, 8, 11));
+    let dob2 = new GalacticAgeCalculator(new Date(1920, 1, 1));
+    expect(dob.yearsLeftMars()).toEqual("You are 13 years old on Mars. You have 24 Mars solar years left before you kick the bucket!");
+    expect(dob.yearsLeftMars()).not.toEqual("You are 109 years old on Mars. You have 1 Mars solar years left before you kick the bucket!");
+    expect(dob2.yearsLeftMars()).toEqual("You are 52 years old on Mars. You have over stayed your welcome on Mars by 15 Mars solar years.");
+  });
 });
