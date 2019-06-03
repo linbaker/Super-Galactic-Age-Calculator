@@ -27,6 +27,17 @@ export class GalacticAgeCalculator {
     return ageInMercYears;
   }
 
+  yearsLeftMercury() {
+    const mercuryMod = 0.24;
+    let mercuryYearsLeft = Math.floor(this.yearsLeft()/mercuryMod);
+    if (mercuryYearsLeft < 0) {
+      let mercuryReturn = `You are ${this.ageOnMercury()} years old on Mercury. You have over stayed your welcome on Mercury by ${Math.abs(mercuryYearsLeft)} Mercury solar years.`;
+      return mercuryReturn;
+    }
+    let mercuryReturn = `You are ${this.ageOnMercury()} years old on Mercury. You have ${mercuryYearsLeft} Mercury solar years left before you kick the bucket!`;
+    return mercuryReturn;
+  }
+
   ageOnVenus() {
     let earthAge = this.ageOnEarth();
     const venusMod = 0.62;

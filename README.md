@@ -17,7 +17,7 @@ _This application will allow a user to enter a date of birth and be given their 
 |User will input date of birth and program will return age in Mercury solar years |"08-11-1993"|"104"|
 |User will input date of birth and program will return age in Venus solar years |"08-11-1993"|"40"|
 |User will input date of birth and program will return age in Mars solar years |"08-11-1993"|"13"|
-|User will input date of birth and program will return age in Jupiter solar years |"08-11-1993"|"296"|
+|User will input date of birth and program will return age in Jupiter solar years |"08-11-1993"|"2"|
 
 
 
