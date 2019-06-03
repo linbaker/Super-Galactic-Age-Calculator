@@ -65,6 +65,17 @@ export class GalacticAgeCalculator {
     return ageInMarsYears;
   }
 
+  yearsLeftMars() {
+    const marsMod = 1.88;
+    let marsYearsLeft = Math.floor(this.yearsLeft()/marsMod);
+    if (marsYearsLeft < 0) {
+      let marsReturn = `You are ${this.ageOnMars()} years old on Mars. You have over stayed your welcome on Mars by ${Math.abs(marsYearsLeft)} Mars solar years.`;
+      return marsReturn;
+    }
+    let marsReturn = `You are ${this.ageOnMars()} years old on Mars. You have ${marsYearsLeft} Mars solar years left before you kick the bucket!`;
+    return marsReturn;
+  }
+
   ageOnJupiter() {
     let earthAge = this.ageOnEarth();
     const jupMod = 11.86;
