@@ -13,9 +13,10 @@ export class GalacticAgeCalculator {
   }
 
   ageOnMercury() {
-    let earthAge = this.ageOnEarth
+    let earthAge = this.ageOnEarth();
     const mercuryMod = 0.24;
-    let ageInMercYears = earthAge * mercuryMod;
+    let ageInMercYears = Math.floor(earthAge/mercuryMod);
+    console.log(ageInMercYears);
     return ageInMercYears;
   }
 }
