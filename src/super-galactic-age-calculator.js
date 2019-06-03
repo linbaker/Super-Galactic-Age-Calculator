@@ -19,6 +19,14 @@ export class GalacticAgeCalculator {
     console.log(ageInMercYears);
     return ageInMercYears;
   }
+
+  ageOnVenus() {
+    let earthAge = this.ageOnEarth();
+    const venusMod = 0.62;
+    let ageInVenusYears = Math.floor(earthAge/venusMod);
+    console.log(ageInVenusYears);
+    return ageInVenusYears;
+  }
 }
 
 
