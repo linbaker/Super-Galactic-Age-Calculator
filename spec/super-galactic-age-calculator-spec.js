@@ -37,4 +37,10 @@ describe('GalacticAgeCalculator', function() {
     expect(dob.ageOnJupiter()).not.toEqual(20);
   });
 
+  it('should return amount of years left based on average life expectancy', function() {
+    let dob = new GalacticAgeCalculator(new Date(1993, 8, 11));
+    expect(dob.yearsLeft()).toEqual(46);
+    expect(dob.yearsLeft()).not.toEqual(20);
+  });
+
 });
