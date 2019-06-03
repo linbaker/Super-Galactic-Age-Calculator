@@ -43,4 +43,11 @@ describe('GalacticAgeCalculator', function() {
     expect(dob.yearsLeft()).not.toEqual(20);
   });
 
+  it('should return life expectancy on Mercury', function() {
+    let dob = new GalacticAgeCalculator(new Date(1993, 8, 11));
+    let dob2 = new GalacticAgeCalculator(new Date(1920, 1, 1));
+    expect(dob.yearsLeftMercury()).toEqual("You are 104 years old on Mercury. You have 191 Mercury solar years left before you kick the bucket!");
+    expect(dob.yearsLeftMercury()).not.toEqual("You are 109 years old on Mercury. You have 1 Mercury solar years left before you kick the bucket!");
+    expect(dob2.yearsLeftMercury()).toEqual("You are 412 years old on Mercury. You have over stayed your welcome on Mercury by 117 Mercury solar years.");
+  });
 });
