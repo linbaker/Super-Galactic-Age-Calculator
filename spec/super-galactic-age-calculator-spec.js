@@ -31,4 +31,10 @@ describe('GalacticAgeCalculator', function() {
     expect(dob.ageOnMars()).not.toEqual(20);
   });
 
+  it('should return Jupiter solar years between current time and user inputted date of birth', function() {
+    let dob = new GalacticAgeCalculator(new Date(1993, 8, 11));
+    expect(dob.ageOnJupiter()).toEqual(2);
+    expect(dob.ageOnJupiter()).not.toEqual(20);
+  });
+
 });
