@@ -25,4 +25,10 @@ describe('GalacticAgeCalculator', function() {
     expect(dob.ageOnVenus()).not.toEqual(20);
   });
 
+  it('should return Mars solar years between current time and user inputted date of birth', function() {
+    let dob = new GalacticAgeCalculator(new Date(1993, 8, 11));
+    expect(dob.ageOnMars()).toEqual(13);
+    expect(dob.ageOnMars()).not.toEqual(20);
+  });
+
 });
