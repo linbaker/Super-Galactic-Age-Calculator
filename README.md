@@ -14,10 +14,10 @@ _This application will allow a user to enter a date of birth and be given their 
 |Behavior|Input|Output|
 |-|-|-|
 |User will input date of birth and program will return age in Earth years|"08-11-1993"|"25"|
-|User will input date of birth and program will return age in Mercury solar years |"08-11-1993"|"6"|
-|User will input date of birth and program will return age in Venus solar years |"08-11-1993"|"15"|
-|User will input date of birth and program will return age in Mars solar years |"08-11-1993"|"47"|
-|User will input date of birth and program will return age in Mercury solar years |"08-11-1993"|"296"|
+|User will input date of birth and program will return age in Mercury solar years |"08-11-1993"|"104"|
+|User will input date of birth and program will return age in Venus solar years |"08-11-1993"|"40"|
+|User will input date of birth and program will return age in Mars solar years |"08-11-1993"|"13"|
+|User will input date of birth and program will return age in Jupiter solar years |"08-11-1993"|"296"|
 
 
 
