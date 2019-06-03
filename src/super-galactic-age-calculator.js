@@ -46,6 +46,17 @@ export class GalacticAgeCalculator {
     return ageInVenusYears;
   }
 
+  yearsLeftVenus() {
+    const venusMod = 0.62;
+    let venusYearsLeft = Math.floor(this.yearsLeft()/venusMod);
+    if (venusYearsLeft < 0) {
+      let venusReturn = `You are ${this.ageOnVenus()} years old on Venus. You have over stayed your welcome on Venus by ${Math.abs(venusYearsLeft)} Venus solar years.`;
+      return venusReturn;
+    }
+    let venusReturn = `You are ${this.ageOnVenus()} years old on Venus. You have ${venusYearsLeft} Venus solar years left before you kick the bucket!`;
+    return venusReturn;
+  }
+
   ageOnMars() {
     let earthAge = this.ageOnEarth();
     const marsMod = 1.88;
