@@ -3,7 +3,7 @@ export class GalacticAgeCalculator {
     this.birthday = birthday;
   }
 
-  earthAge() {
+  ageOnEarth() {
     let birthdate = new Date(this.birthday);
     let now = Date.now();
     let ageInMS = (now - Date.parse(birthdate));
@@ -13,12 +13,14 @@ export class GalacticAgeCalculator {
   }
 
   ageOnMercury() {
-    let earthAge =
+    let earthAge = this.ageOnEarth
+    const mercuryMod = 0.24;
+    let ageInMercYears = earthAge * mercuryMod;
+    return ageInMercYears;
   }
-  Mercury Solar Years (0.24 Earth Years)
 }
 
 
 //Class GalacticAgeCalculator returns as unused variable and refuses to compile unless I add the following code
 let birthday = new GalacticAgeCalculator(new Date());
-birthday.age();
+birthday.ageOnEarth();
