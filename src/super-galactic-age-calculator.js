@@ -35,6 +35,14 @@ export class GalacticAgeCalculator {
     console.log(ageInMarsYears);
     return ageInMarsYears;
   }
+
+  ageOnJupiter() {
+    let earthAge = this.ageOnEarth();
+    const jupMod = 11.86;
+    let ageInJupiterYears = Math.floor(earthAge/jupMod);
+    console.log(ageInJupiterYears);
+    return ageInJupiterYears;
+  }
 }
 
 
